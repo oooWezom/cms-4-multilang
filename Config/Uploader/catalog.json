@@ -1,0 +1,6 @@
+{
+  "url":"/wezom/ajax/catalog/upload_images",
+  "urlUpload":"/wezom/ajax/catalog/get_uploaded_images",
+  "urlDelete":"/wezom/ajax/catalog/delete_catalog_photo",
+  "idNumber": "35"
+}

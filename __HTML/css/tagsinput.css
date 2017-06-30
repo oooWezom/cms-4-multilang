@@ -1,0 +1,64 @@
+
+.clearfix {
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.clearfix:after {
+    clear: both;
+}
+div.tagsinput {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 100px;
+    overflow-y: auto;
+    padding: 5px;
+    width: 300px;
+}
+
+div.tagsinput span.tag {
+    background: #4d7496;
+    border: 1px solid #4d7496;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 11px;
+    line-height: 23px;
+    margin: 5px;
+    padding: 0 8px;
+}
+div.tagsinput span.tag span {
+	vertical-align:top;
+}
+
+
+div.tagsinput span.tag a {
+    color: #b3cade;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+	vertical-align:top;
+}
+div.tagsinput input {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    box-shadow: none;
+    font-size: 13px;
+    padding: 7px 5px;
+}
+div.tagsinput div {
+    display: block;
+    float: left;
+}
+.tags_clear {
+    clear: both;
+    height: 0;
+    width: 100%;
+}
+.not_valid {
+    background: none repeat scroll 0 0 #fbd8db !important;
+    color: #90111a !important;
+}

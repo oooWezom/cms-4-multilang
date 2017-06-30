@@ -1,0 +1,21 @@
+{
+    "sProcessing":   "czekać...",
+    "sLengthMenu":   "_MENU_ zapisy na stronie:",
+    "sZeroRecords":  "Nie ma żadnych wpisów.",
+    "sInfo":         "Nagranie _START_ da _END_ z _TOTAL_ dokumentacja",
+    "sInfoEmpty":    "Rekordy od 0 do 0 z 0 wpisów",
+    "sInfoFiltered": "(filtrowane z rejestrów _MAX_)",
+    "sInfoPostFix":  "",
+    "sSearch":       "",
+    "sUrl":          "",
+    "oPaginate": {
+        "sFirst": "Pierwszy",
+        "sPrevious": "Poprzedni",
+        "sNext": "Następny",
+        "sLast": "Ostatni"
+    },
+    "oAria": {
+        "sSortAscending":  ": aktywować na kolumnie rosnąco",
+        "sSortDescending": ": włączyć do Sortable kolumn malejąco"
+    }
+}

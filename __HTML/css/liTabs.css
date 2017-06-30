@@ -1,0 +1,72 @@
+/*Plugin CSS*/
+.t_wrap {
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+	//zoom:1;
+	display:block;
+}
+.t_wrap:after{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.t_item {
+	list-style: none;
+}
+.t_link {
+	background:#fff;
+	color: #4d7496;
+	float: left;
+	margin: 2px 2px 0 0;
+	padding: 6px 10px 4px 10px;
+	position: relative;
+	text-decoration: none;
+	z-index: 2;
+	border:1px solid #fff;
+	border-bottom:0;
+	margin-top:1px;
+}
+.t_link.cur,
+.t_link.cur:hover {
+	margin-top:0;
+	background: #fff;
+	border-color:#ccc;
+	border-top: 3px solid #4d7496;
+	color:#000;
+	padding: 5px 10px;
+}
+.t_link:hover {
+	background:#f9f9f9;
+	color: #4d7496;
+	text-decoration: none;
+	border:1px solid #eeeeee;
+	border-bottom:0;
+}
+.t_content {
+	display: none;
+	float: left;
+	margin: 0 -100% 0 0;
+	position: relative;
+	width: 100%;
+	text-align:left;
+}
+.t_include {
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	clear: both;
+	padding: 10px;
+	position: relative;
+	top: -1px;
+	z-index: 1;
+	zoom: 1;
+}
+.t_include:after {
+	content:'';
+	display:block; 
+	clear:both;
+	height:0;
+}

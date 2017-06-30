@@ -1,0 +1,75 @@
+/*harmonica*/
+.harmonica { margin:0; padding:0}
+.harmonica ul {list-style:outside; padding-left:15px; margin:0}
+.harmonica li {}
+.harmonica a {}
+.harmonica a:hover {}
+.harmonica a.cur {}
+
+.skinClear a:before {}
+.skinClear a.harFull.harOpen:before {}
+.skinClear a.harFull:before {}
+
+.harmonica ul li {}
+.harmonica ul a {}
+.harmonica ul a.cur { }
+.harmonica ul a:hover {}
+
+.harmonica ul ul li {}
+.harmonica ul ul a,
+.harmonica ul ul a.cur {}
+.harmonica ul ul a:hover {}
+
+.skinTree li.last {}
+
+.accordion {
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:left;
+}
+.accordion > li {
+	border:1px solid #ddd;
+	border-width:0 1px 1px;
+	list-style:none;
+	padding:0; 
+	display:block;
+	//zoom:1;
+	margin:0 0 5px 0;
+}
+.accordion > li > a {
+	background:#f5f5f5;
+	padding:10px 15px;
+	display:block;
+	font-size:13px;
+	font-weight:700;
+	border-left:0;
+	border-right:0;
+	border-bottom:0;
+	text-align:left;
+}
+.accordion > li > a:hover {
+
+}
+.accordion > li > ul {
+	background:#fff;
+	padding:15px 15px; 
+	height:auto;
+	overflow:hidden;
+	//zoom:1;
+	
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.accordion > li > a.harFull.harOpen {
+	border-bottom:1px solid #ddd;
+}
+
+.accordion > li > ul.harContentClose {
+	height:0;
+	padding-top:0;
+	padding-bottom:0;
+}

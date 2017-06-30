@@ -1,0 +1,19 @@
+# This only for windows
+AddDefaultCharset UTF-8
+
+# Turn on URL rewriting
+RewriteEngine On
+
+# Installation directory
+#RewriteBase /
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.+)/$ /wezom/$1 [R=301,L]
+
+#RewriteCond %{REQUEST_URI} (/?backend/)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?$1 [L]

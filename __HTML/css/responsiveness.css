@@ -1,0 +1,324 @@
+/* Responsiveness */
+/* Tablet (portrait)  */
+@media only screen and  (max-width: 1200px)  {
+.col-md-3 {
+    width: 50%;
+}
+table {
+	font-size:12px;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px 4px;
+}
+.hidden-xx {
+	display:none
+}
+
+.column-2 .col-md-1,
+.column-2 .col-md-2,
+.column-2 .col-md-3,
+.column-2 .col-md-4,
+.column-2 .col-md-5,
+.column-2 .col-md-6,
+.column-2 .col-md-7,
+.column-2 .col-md-8,
+.column-2 .col-md-9,
+.column-2 .col-md-10,
+.column-2 .col-md-11,
+.column-2 .col-md-12 {
+    width: 100%;
+	float:none;
+	margin-bottom:6px;
+}
+
+.column-2 .toolbarBottom { display:block}
+
+}
+
+@media only screen and  (max-width: 980px)  {
+.scrollSize {
+	width:100%;
+	overflow-x:scroll;
+}
+/*	
+.pageList .dd-item > button {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+	background:#f9f9f9;
+}	
+.pageList {
+	margin-left:30px;
+}
+.pageList.pageList-del {
+	margin-left:0;
+}
+.pageList .dd-item > button {
+    left: -69px;
+    top: 3px;
+}
+*/
+.toolbarBottom { display:block}
+.daterangepicker.opensleft .ranges, 
+.daterangepicker.opensleft .calendar {
+    float: none;
+    display:block;
+}
+.auLogoWrap {
+    float: none;
+    height: auto;
+    width: auto;
+	text-align:center;
+}	
+.auLogoInner {
+    padding: 15px 0 25px;
+    text-align: center;
+}
+
+.auContentWrap {
+    float: none;
+    height: auto;
+    width: 100%;
+	padding:20px 0;
+}
+.auContentInner {
+    padding: 0;
+	width:280px; 
+	margin:auto;
+}
+.loginFormEl {
+    border: 1px solid #d2d8dc;
+    font: 14px/1.2em Arial,Helvetica,sans-serif;
+    padding: 10px 10px 10px 40px;
+    width: 100%;
+}
+.auLogin,
+.auPass,
+.auRe {
+    margin-right: 52px;
+	padding: 0 0 8px;
+}
+
+.passLink,
+.enterLink {
+	padding-left:30px;
+	padding-right:30px;
+}
+.passLink {
+	float:left;
+}
+.enterLink {
+	float:right;
+}
+
+.auLabel {
+    font-size:16px;
+    padding: 0 0 15px;
+}
+.auSubTitle {
+    font-size:20px;
+    padding: 20px 0 15px;
+}
+.linkWrap {
+	padding-top:30px;
+}
+.linkWrap a {
+	display:block;
+	font-size:16px;
+	margin:20px 0;
+}
+.auWrap {
+	position:static;
+}
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12 {
+    width: 100%;
+	float:none;
+	margin-bottom:6px;
+}
+.form-horizontal .control-label {
+    text-align: left;
+    padding-bottom: 7px;
+    padding-top: 0;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px;
+}
+table {
+	font-size:inherit;
+}
+/*
+.sideBarClose .contentWrap,
+.contentWrap {
+    margin-left: 0 !important;
+}
+*/
+.crumbs .crumb-buttons > li > a	 span {
+	display:none;
+}
+.crumbs .crumb-buttons {
+    margin: 0;
+}
+.fontLogo {
+    display:none;
+}
+.auWrap .fontLogo {
+    display:inline-block;
+}
+.toggleSidebar {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left:0;
+}
+
+.navbarNav .username {
+    display:none;
+}
+.navbarIndent {
+	margin:0;
+}
+
+.breadcrumb {
+    display:none;
+}
+
+.form_style label { display:block; width:auto; float:none; text-align:left;}
+.form_style .r { position:static;}
+.form_style input[type="text"], 
+.form_style input[type="password"], 
+.form_style textarea { width:93%; }
+.form_style select { width:93%}
+
+
+
+.daterangepicker .ranges {
+    width: auto !important;
+}
+.container {
+	overflow:hidden;
+	width:100%;
+}
+.dropdownMenu a {
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.daterangepicker .ranges li {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.scrollSize_1,
+.scrollSize_2 {
+    height: auto;
+	max-height: none;
+}
+.mCustomScrollBox {
+    max-height:none !important;
+}
+.pageList .dd3-handle {
+    display: none;
+}
+.pageList .dd3-content, .pageList .dd3-content {
+    padding: 5px 0 5px 0px;
+}
+.column-drag { display:none;}
+.pageList .dd-list .dd-list {
+    padding-left: 15px;
+}
+.pageList .checkbox-column {
+	border-left:0;
+}
+}
+
+@media only screen and (max-width: 700px) { 
+.nowrap {white-space:normal}
+.page-header .toolbar,
+.toolbarBottom {
+    float: none;
+	text-align:center;
+	display:block
+}
+
+body { background-color:#000;}
+.sideBarClose .contentWrap {
+    opacity:1
+}
+.contentWrap {
+    opacity:0.2
+}
+
+
+table {
+	font-size:11px;
+}
+.hidden-xs {
+    display: none !important;
+}
+/*
+.mce-container {
+	width:90% !important;
+	left:5% !important;
+}
+*/
+.mce-label {
+    display: block;
+    overflow: hidden;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+}
+
+
+
+
+@media only screen and (max-width: 500px) { 
+
+.btnText {
+    display: none;
+}
+.orderLabelStatus:after {
+	display:inline-block;
+}
+.hidden-xs,
+.hidden-ss {
+    display: none !important;
+}
+ul.stats li:nth-of-type(3) {
+    border-right:0;
+}
+.dropdownMenu {
+    max-width: none !important;
+	left:0 !important;
+	right:0 !important;
+	width:100% !important;
+}
+
+.navbarNav li,
+.btn-group,
+.crumbs .crumb-buttons > li,
+.dropdownWrap {
+	position:static !important;
+}
+.col-md-3 {
+    width: 100%;
+}
+
+.file_upload > mark{
+	display: none
+}
+.file_upload .button{
+	width: 100%
+}
+.dropdownMenu a {
+    white-space: normal;
+}
+
+
+}

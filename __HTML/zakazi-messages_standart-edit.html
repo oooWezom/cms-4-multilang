@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<!-- (c) Wezom web-студия | www.wezom.com.ua -->
+<!---------------------------------------------------------------------------------------------------------------
+               ______                _                 _               _             _ _
+__      _____ |___   |  _   __  __  | | __      _____ | |__        ___| |_ _   _  __| (_) ___
+\ \ /\ / / _ \   /  / / _ \|  \/  | | | \ \ /\ / / _ \|  _ \   _  / __| __| | | |/ _` | |/ _ \
+ \ V  V |  __/  /  / | |_| | |\/| | | |  \ V  V |  __/| (_) | |_| \__ | |_| |_| | (_| | | (_) |
+  \_/\_/ \___| /  /__ \___/|_|  |_| | |   \_/\_/ \___||____/      |___/\__|\__,_|\__,_|_|\___/
+              |______|              |_|
+
+----------------------------------------------------------------------------------------------------------------->
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta http-equiv="imagetoolbar" content="no">
+<title>Верстка | (c) Wezom web-студия | http://www.wezom.com.ua/</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.1.min.css">
+<link rel="stylesheet" href="css/liValidForm.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" href="css/daterangepicker-bs3.css">
+<link rel="stylesheet" href="css/liTabs.css">
+<link rel="stylesheet" href="css/liQuickEdit.css">
+<link rel="stylesheet" href="css/liHarmonica.css">
+<link rel="stylesheet" href="css/jquery.minicolors.css">
+
+<link rel="stylesheet" href="css/nestable.css">
+
+<link rel="stylesheet" href="css/typeahead.css">
+<link rel="stylesheet" href="css/tagsinput.css">
+<link rel="stylesheet" href="css/iphone-style-checkboxes.css">
+<link rel="stylesheet" href="css/jquery.dataTables.css">
+
+<link rel="stylesheet" href="css/responsiveness.css">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="target-densitydpi=device-dpi">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="pic/apple-touch-fa-57x57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="pic/apple-touch-fa-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="pic/apple-touch-fa-114x114.png">
+
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--<script src="js/wysihtml5.min.js"></script> -->
+
+
+<script src="js/modernizr.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js">\x3C/script>')</script>
+<script src="js/jquery-ui-1.10.1.min.js"></script>
+<script src="js/i18n/jquery-ui-i18n.js"></script>
+<!--<script src="js/bootstrap.min.js"></script> -->
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/jquery.liActualSize.js"></script>
+<script src="js/liValidForm.js"></script>
+<script src="js/jquery.cookie.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script src="js/moment.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/jquery.liTip.js"></script>
+<script src="js/jquery.liTabs.js"></script>
+<script src="js/jquery.liHarmonica.js"></script>
+<script src="js/jquery.nestable.min.js"></script>
+<script src="js/typeahead.min.js"></script>
+<script src="js/jquery.tagsinput.min.js"></script>
+<script src="js/iphone-style-checkboxes.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.bootstrap.js"></script>
+<script src="js/jquery.liTranslit.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/data.js"></script>
+<script src="js/jquery.liQuickEdit.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/jquery.minicolors.js"></script>
+
+
+
+<script src="js/tinymce/tinymce.min.js"></script>
+
+
+
+
+<script src="js/main.js"></script>
+<script src="js/plugins.js"></script>
+
+<script src="js/ui.js"></script>
+
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="image_src" href="pic/expres_icon.jpg">
+<!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+</head>
+<body>
+
+
+    <header class="navbar navbarPos">
+		<div class="clearFix navbarIndent">
+			<a class="fontLogo" href="dashboard.html">
+				<span class="top fontLogoName">wezom</span>
+				<span class="top fontLogoTitle">
+					<span class="fontLogoLabel">cms</span>
+					<span class="fontLogoVersion">4.0</span>
+				</span>
+			</a>
+			<a title="Переключить навигацию" class="tip toggleSidebar" href="#">
+				<i class="fa-bars"></i>
+			</a>
+			<ul class="navbarNav">
+				<li class="dropdown dropdownMenuHidden">
+					<a class="dropdownToggle" href="#">
+						<i class="fa-warning"></i>
+						<span class="badge">6</span>
+					</a>
+					
+					<ul class="dropdownMenu extended notification scrollbarHeight pull-right">
+						<li class="title">
+							<p>
+								У вас 6 новых уведомений
+							</p>
+						</li>
+						<li>
+							<a href="#"> <span class="label label-success"><i class="fa-plus"></i></span> <span class="message">Регистрация нового пользователя.</span> <span class="time">1 минуту</span> </a>
+						</li>
+						<li>
+							<a href="#"> <span class="label label-danger"><i class="fa-warning"></i></span> <span class="message">Высокая загрузка процессора.</span> <span class="time">5 минут</span> </a>
+						</li>
+						<li>
+							<a href="#"> <span class="label label-success"><i class="fa-plus"></i></span> <span class="message">Регистрация нового пользователя.</span> <span class="time">10 минут</span> </a>
+						</li>
+						<li>
+							<a href="#"> <span class="label label-info"><i class="fa-bullhorn"></i></span> <span class="message">Сергей Трушин подписался на новости.</span> <span class="time">10 минут</span> </a>
+						</li>
+						<li>
+							<a href="#"> <span class="label label-info"><i class="fa-envelope"></i></span> <span class="message">Сергей Гузенко написал вам сообщение.</span> <span class="time">10 минут</span> </a>
+						</li>
+						<li>
+							<a href="#"> <span class="label label-warning"><i class="fa-bolt"></i></span> <span class="message">Дисковое пространство заполнено на 85%.</span> <span class="time">55 минут</span> </a>
+						</li>
+						<li class="footer">
+							<a href="#">Смотреть все уведомления</a>
+						</li>
+					</ul>			
+					
+				</li>
+				<li class="dropdown dropdownMenuHidden">
+					<a class="dropdownToggle" href="#">
+						<i class="fa-envelope"></i>
+						<span class="badge">3</span>
+					</a>
+					<ul class="dropdownMenu extended pull-right">
+						<li class="title">
+							<p>У вас 3 новых сообщения</p>
+						</li>
+						<li>
+							<a href="#">
+								<span class="photo">
+									
+								</span>
+								<span class="subject">
+									<span class="from">Евгения Логвиненко</span>
+									<span class="time">Только что</span>
+								</span>
+								<span class="text">Добрый день. Я не смогла зайти в личный кабинет, чтоб отправить свою работу. И здесь фото не прикрепляется. Что мне делать</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="photo">
+									<img alt="" src="pic/photo/ava_2.jpg">
+								</span>
+								<span class="subject">
+									<span class="from">Анна Анна</span>
+									<span class="time">1 час</span>
+								</span>
+								<span class="text">Пишет вам, ваша ученица Скобенюк Анна, зимнего выпуска.</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="photo">
+									<img alt="" src="pic/photo/ava_1.jpg">
+								</span>
+								<span class="subject">
+									<span class="from">Сергей Гузенко</span>
+									<span class="time">2 дня</span>
+								</span>
+								<span class="text">нам бы вотермарку http://guzenko:7748/gallery на фото, чтобы в картинках гугла было видно + я вставил но ее не видно всю</span>
+							</a>
+						</li>
+						<li class="footer">
+							<a href="#">Смотреть все сообщения</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown dropdownMenuHidden">
+					<a class="dropdownToggle" href="#">
+						<i class="fa-male"></i>
+						<span class="navText username">Ivanich</span>
+						<i class="fa-caret-down small"></i>
+					</a>
+					<ul class="dropdownMenu pull-right">
+						<li>
+							<a href="#">
+								<i class="fa-user"></i>
+								Профиль
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-tasks"></i>
+								Мои задачи
+							</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="#">
+								<i class="fa-key"></i>
+								Выйти
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+    </header>
+	<!-- .navbar-->
+	
+	<div class="container fixedHeader">
+		<div class="sideBar sideBarFixed sideBarSize">
+			<div class="mCustomScrollbar fluid sideBarScrollSize">
+				<div class="sideBarContent">
+					<ul class="navLeft">
+						<li>
+							<a href="#">
+								<i class="fa-cogs"></i>
+								Разработка
+								<i class="fa-info-circle text-info bs-tooltip nav-hint" title="<b>Раздел для разрабочика.</b><br>Содержит набор всех предусмотренных элементов пользовательского интерфейса"></i>
+								<i class="arrow fa-angle-right"></i>
+							</a>
+							<ul class="subMenu">
+								<li><a href="ui.html"><i class="fa-angle-right"></i>Пользовательский интерфейс</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-dashboard"></i>
+								Панель управления
+								<i class="arrow fa-angle-right"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-folder-open-o"></i>
+								Страницы
+								<i class="arrow fa-angle-right"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-group"></i>
+								Покупатели
+								<i class="arrow fa-angle-right"></i>
+							</a>
+							<ul class="subMenu">
+								<li><a href="#"><i class="fa-angle-right"></i>Покупатели</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Адреса</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Переписки</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Группы</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Корзины</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-shopping-cart"></i>
+								Заказы
+								<span class="pull-right">6</span>
+								<i class="arrow fa-angle-right"></i>
+							</a>
+							<ul class="subMenu">
+								<li><a href="#"><i class="fa-angle-right"></i>Заказы</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Статусы заказа</a></li>
+								<li><a class="cur" href="#"><i class="fa-angle-right"></i>Стандартные сообщения о заказах</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Шаблоны писем</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>SMS сообщения</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-inbox"></i>
+								Каталог товаров
+								<i class="arrow fa-angle-right"></i>
+							</a>
+							<ul class="subMenu">
+								<li><a href="#"><i class="fa-angle-right"></i>Группы товаров</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Импорт товаров</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Товары</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Статистика</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Поставщики</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Бренды</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Города</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Доставка</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="#">
+								<i class="fa-picture-o"></i>
+								Фотогалерея
+								<i class="arrow fa-angle-right"></i>
+							</a>
+							<ul class="subMenu">
+								<li><a href="#"><i class="fa-angle-right"></i>Фотоальбомы</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Фотографии</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-video-camera"></i>
+								Видеогалерея
+								<i class="arrow fa-angle-right"></i>
+							</a>
+							<ul class="subMenu">
+								<li><a href="#"><i class="fa-angle-right"></i>Видеоальбомы</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Видео</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-weixin"></i>
+								Отзывы
+								<span class="pull-right">2</span>
+								<i class="arrow fa-angle-right"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-bullhorn"></i>
+								Новости
+								<i class="arrow fa-angle-right"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-comments-o"></i>
+								Комментарии
+								<span class="pull-right">1</span>
+								<i class="arrow fa-angle-right"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-list-ul"></i>
+								Голосование
+								<i class="arrow fa-angle-right"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-users"></i>
+								Пользователи
+								<span class="pull-right">4</span>
+								<i class="arrow fa-angle-right"></i>
+							</a>
+							<ul class="subMenu">
+								<li><a href="#"><i class="fa-angle-right"></i>Менеджер пользователей</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Группы пользователей</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Уровни доступа</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-paperclip"></i>
+								Прайс-листы
+								<i class="arrow fa-angle-right"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-puzzle-piece"></i>
+								Реклама на сайте
+								<i class="arrow fa-angle-right"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-language"></i>
+								Менеджер языков
+								<i class="arrow fa-angle-right"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-tags"></i>
+								Модуль SEO
+								<i class="arrow fa-angle-right"></i>
+							</a>
+							<ul class="subMenu">
+								<li><a href="#"><i class="fa-angle-right"></i>Теги</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Веб-аналитика</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Счётсчики</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-rss"></i>
+								Рассылка
+								<i class="arrow fa-angle-right"></i>
+							</a>
+							<ul class="subMenu">
+								<li><a href="#"><i class="fa-angle-right"></i>Подписчики</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Архив рассылок</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Отчеты</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-file-image-o"></i>
+								Слайдер
+								<i class="arrow fa-angle-right"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-envelope-o"></i>
+								Сообщения
+								<span class="pull-right">3</span>
+								<i class="arrow fa-angle-right"></i>
+							</a>
+							<ul class="subMenu">
+								<li><a href="#"><i class="fa-angle-right"></i>Создать сообщение</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Читать сообщения</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa-cogs"></i>
+								Настройки
+								<i class="arrow fa-angle-right"></i>
+							</a>
+							<ul class="subMenu">
+								<li><a href="#"><i class="fa-angle-right"></i>Настройки сайта</a></li>
+								<li><a href="#"><i class="fa-angle-right"></i>Настроки панели управления</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="divider resizeable resizeablePos"></div>
+		</div><!-- .sideBar-->
+		<div class="contentWrap">
+			<div class="contentWrapMar">
+				
+				<div class="crumbs">
+					<ul class="breadcrumb">
+						<li>
+							<i class="fa-home"></i>
+							<a href="#">Панель управления</a>
+						</li>
+						<li>
+							<a href="#">Заказы</a>
+						</li>
+						<li>
+							<a title="#" href="#">Стандартные сообщения о заказах</a>
+						</li>
+						<li class="current">
+							<a title="" href="#">Редактировать: Задержка [RU]</a>
+						</li>
+						
+					</ul>					
+					<ul class="crumb-buttons">
+						<li class="first">
+							<a title="" href="#"><i class="fa-signal"></i><span>Статистика</span></a>
+						</li>
+						<li class="dropdown dropdownMenuHidden">
+							<a  class="dropdownToggle" href="#">
+								<i class="fa-tasks"></i>
+								<span>Пользователи <strong>(+3)</strong></span>
+								<i class="fa-angle-down left-padding"></i>
+							</a>
+							<ul class="dropdownMenu pull-right">
+								<li>
+									<a title="" href="#"><i class="fa-plus"></i>Добавить нового</a>
+								</li>
+								<li>
+									<a title="" href="#"><i class="fa-reorder"></i>Обзор</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- .crumbs-->
+				
+				<div class="page-header clearFix">
+					<div class="page-title">
+						<h3>
+							Редактировать: Задержка [RU]
+						</h3>
+						<span>
+							Здравствуй, Ivanich!
+						</span>
+					</div>
+					<div class="toolbar no-padding">
+						<div class="btn-group">
+								
+								
+								<a title="Сохранить" href="#" class="btn btn-lg  bs-tooltip text-success"><i class="fa-save"></i>  <span class="hidden-xx">Сохранить</span></a>
+								<a title="Отменить" href="#" class="btn btn-lg  bs-tooltip text-danger"><i class="fa-times-circle"></i>  <span class="hidden-xx">Отменить</span></a>
+								<a title="Справка" href="help/content_article_manager/index.html" class="btn btn-lg  bs-tooltip supportContent"><i class="fa-support"></i>  <span class="hidden-xx">Справка</span></a>
+						
+						</div>
+					</div>
+				</div><!-- .page-header-->
+				
+				
+				
+				
+				
+				<div class="rowSection">
+					<div class="col-md-12">
+						<div class="widget">
+							
+							<div class="widgetContent">
+
+								
+								<div class="form-horizontal row-border">
+									<div class="form-group">
+										<label class="col-md-2 control-label">Краткое название</label>
+										<div class="col-md-10">
+											
+											<input class="form-control" type="text" value="Задержка [RU]"/>
+											
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-2 control-label">Сообщение</label>
+										<div class="col-md-10">
+											
+											<textarea class="form-control" name="textarea" cols="5" rows="6">Здравствуйте! 
+
+К сожалению, товаров с вашего заказа в настоящее время нет в наличии. Это может привести к небольшой задержке с доставкой. Пожалуйста, примите наши извинения и будьте уверены, что мы прилагаем все усилия, чтобы исправить это. 
+
+С уважением</textarea>
+											
+											
+										</div>
+									</div>
+								</div>
+								
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="clearFix">
+					<div class="toolbar no-padding toolbarBottom">
+						<div class="btn-group">
+							<a title="Сохранить" href="#" class="btn btn-lg  bs-tooltip text-success"><i class="fa-save"></i>  <span class="hidden-xx">Сохранить</span></a>
+							<a title="Отменить" href="#" class="btn btn-lg  bs-tooltip text-danger"><i class="fa-times-circle"></i>  <span class="hidden-xx">Отменить</span></a>
+							<a title="Справка" href="help/content_article_manager/index.html" class="btn btn-lg  bs-tooltip supportContent"><i class="fa-support"></i>  <span class="hidden-xx">Справка</span></a>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="rowSection">
+					<div class="copyWrap">
+						© 2014 <a target="_blank" href="http://wezom.com.ua">WEZOM CMS 4.0</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>		
+													
+	
+	
+													
+</body>
+</html>

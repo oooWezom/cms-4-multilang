@@ -1,0 +1,137 @@
+/*
+	Paginator 3000
+	- idea by ecto (ecto.ru)
+	- coded by karaboz (karaboz.ru)
+
+	HTML example
+	<div class="paginator" id="paginator_example">
+		<table>
+			<tr>
+				<td><span><strong>1</strong></span></td>
+				...
+				<td><span><a href="">3000</a></span></td>
+			</tr>
+			<tr>
+				<td colspan="">
+					<div class="scroll_bar">
+						<div class="scroll_trough"></div>
+						<div class="scroll_thumb">
+							<div class="scroll_knob"></div>
+						</div>
+						<div class="current_page_mark"></div>
+					</div>				
+				</td>
+
+			</tr>
+		</table>
+	</div>
+*/
+.paginator {
+	font-size:1em;
+	width:150px;
+	margin:20px auto 0;
+}
+.paginator table {
+	border-collapse:collapse;
+	table-layout:fixed;
+	width:100%;
+	margin:0;
+}
+.paginator table td {
+	padding:0;
+	white-space:nowrap;
+	text-align:center;
+	border:0;
+}
+.paginator span {
+	display:block;
+	padding:3px 0;
+	color:#fff;
+}
+.paginator span strong,
+.paginator span a {
+	padding:4px 8px;
+	text-decoration:none;
+	font:14px/1.2em Arial, Helvetica, sans-serif;
+}
+.paginator span strong {
+	background:#000;
+	font-style:normal;
+	font-weight:normal; 
+}
+.paginator .scroll_bar {
+	width:100%;	height:20px;
+	position:relative;
+	margin-top:10px; 
+}
+.paginator .scroll_trough {
+	width:100%;	height:3px;
+	background:#ccc;
+	overflow:hidden;
+}
+.paginator .scroll_thumb {
+	position:absolute;
+	z-index:2;
+	width:0; height:3px;
+	top:0; left:0;
+	font-size:1px;
+	background:#363636;
+}
+.paginator .scroll_knob {
+	position:absolute;
+	top:-5px; left:50%;
+	margin-left:-10px;
+	width:20px; 
+	height:34px;
+	overflow:hidden;
+	background:url(../pic/slider_knob.png) no-repeat 50% 50%;
+	cursor:pointer; cursor:hand;
+}
+.paginator .current_page_mark {
+	position:absolute;
+	z-index:1;
+	top:0; left:0;
+	width:0; height:3px;
+	overflow:hidden;
+	background:#ff6c24;
+}
+
+.fullsize .scroll_thumb {
+	display:none;
+}
+
+
+.paginator_pages {
+	width:150px;
+	text-align:center;
+	font-size:11px; 
+	color:#808080;
+	padding:5px 0 40px 0;
+	margin:auto;
+}
+.pageMobile { display:none}
+
+.pageMobile { margin:-3px 0 0 -3px;}
+.pageMobile a,
+.pageMobile strong {
+	display:inline-block;
+	vertical-align:top;
+	font: 14px/1.2em Arial,Helvetica,sans-serif;
+    padding: 4px 8px;
+    text-decoration: none;
+	background:#f1f1f1;
+	margin:3px 0 0 3px
+}
+.pageMobile strong {
+	background:#000;
+	color:#fff;
+}
+
+
+.touch .paginator table { display:none;}	
+.touch .pageMobile { display:block;text-align:center;}
+.touch .paginator_pages { display:none;}
+.touch .paginator {
+	width:auto;
+}
+

@@ -1,0 +1,21 @@
+{
+    "sProcessing":   "Зачекайте...",
+    "sLengthMenu":   "_MENU_ записів на стронці",
+    "sZeroRecords":  "Записи відсутні.",
+    "sInfo":         "Записи з _START_ по _END_ з _TOTAL_ записів",
+    "sInfoEmpty":    "Записи з 0 по 0 з 0 записів",
+    "sInfoFiltered": "(відфільтровано з _MAX_ записів)",
+    "sInfoPostFix":  "",
+    "sSearch":       "",
+    "sUrl":          "",
+    "oPaginate": {
+        "sFirst": "Перша",
+        "sPrevious": "Попередня",
+        "sNext": "Наступна",
+        "sLast": "Остання"
+    },
+    "oAria": {
+        "sSortAscending":  ": активувати для сортування стовпчика по зростанню",
+        "sSortDescending": ": активировать для сортировки столбцов по убыванию"
+    }
+}

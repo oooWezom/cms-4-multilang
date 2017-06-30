@@ -1,0 +1,37 @@
+.go-back > .icon {
+    display: inline-block;
+    height: 64px;
+    margin: 0 5px;
+    transform: translate3d(0px, 0px, 0px);
+    vertical-align: middle;
+    width: 65px;
+}
+.go-back > .icon span {
+    background: #000;
+    border-radius: 50% 50% 50% 50%;
+    display: block;
+    height: 64px;
+    position: absolute;
+    text-indent: 0;
+	line-height:59px;
+	text-align:center;
+	font-size:40px;
+	color:#fff;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.3s ease-in-out 0s;
+    width: 65px;
+}
+.go-back > .icon span.roll {
+    background:#f00;
+    opacity: 0;
+	color:#000;
+    transform: rotate(-90deg) scale(0) skew(0deg) translate(0px);
+}
+.go-back:hover > .icon span {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5) skew(0deg) translate(0px);
+}
+.go-back:hover > .icon span.roll {
+    opacity: 1;
+    transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+}

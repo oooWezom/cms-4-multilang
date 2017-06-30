@@ -1,0 +1,43 @@
+Options -Indexes
+
+<ifmodule mod_expires.c>
+    <filesmatch ".(jpg|jpeg|gif|png|ico|css|js)$">
+        ExpiresActive on
+        ExpiresDefault "access plus 1 month"
+    </filesmatch>
+</ifmodule>
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    <IfModule mod_setenvif.c>
+        BrowserMatch ^Mozilla/4 gzip-only-text/html
+        BrowserMatch ^Mozilla/4\.0[678] no-gzip
+        BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    </IfModule>
+</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+    RewriteRule ^/?(.*) http://%1/$1 [L,R=permanent]
+
+    RewriteCond %{THE_REQUEST} ^GET\ .*/index\.php\ HTTP
+    RewriteRule ^(.*)index\.php$ /$1 [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^wezom/(.*)$ Wezom/index.php [QSA,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^wezom$ Wezom/index.php [QSA,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>

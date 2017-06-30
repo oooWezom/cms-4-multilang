@@ -1,0 +1,127 @@
+/*
+    wNoty v2.5 / css theme default
+    WEZOM Studio / Oleg Dutchenko
+*/
+
+/* base */
+/* group */
+/* informer */
+.wnoty_theme_default .wnoty_informer {
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 1px rgba(0,0,0,.4);
+    background-color: #4d7496;
+}
+.wnoty_theme_default .wnoty_informer:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0,0,0,.4);
+}
+.wnoty_theme_default .wnoty_informer > div:last-child {
+    padding-bottom: 18px;
+}
+/* message */
+.wnoty_theme_default .wnoty_message {
+    overflow: hidden;
+    padding: 15px 25px 10px;
+}
+.wnoty_theme_default .wnoty_close + .wnoty_message {
+    padding-right: 15px;
+}
+.wnoty_theme_default .wnoty_header + .wnoty_message {
+    clear: both;
+    padding-top: 0;
+}
+.wnoty_theme_default .wnoty_message:last-child {
+    padding-bottom: 15px;
+}
+/* message header */
+.wnoty_theme_default .wnoty_header {
+    padding: 15px 25px 8px;
+    font-weight: bold;
+}
+.wnoty_theme_default .wnoty_close + .wnoty_header {
+    padding-right: 15px;
+}
+/* close button */
+.wnoty_theme_default .wnoty_close {
+    float: right;
+    position: relative;
+    z-index: 1;
+    margin: 15px 25px 0px 5px;
+}
+.wnoty_theme_default button.wnoty_close {
+    padding: 0;
+    border: none;
+    background: none;
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 28px;
+    color: inherit;
+    font-family: Arial,Baskerville,monospace;
+    text-shadow: inherit;
+}
+.wnoty_theme_default .wnoty_close:hover {
+    text-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+.wnoty_theme_default .wnoty_close:active {
+    background-color: rgba(0,0,0,.1);
+    text-shadow: 0 -2px rgba(0,0,0,.6);
+}
+/* controls */
+.wnoty_theme_default .wnoty_controls {
+    border-top: 1px solid rgba(0,0,0,.25);
+    padding: 8px 0 15px;
+    margin: 0 25px;
+}
+.wnoty_theme_default .wnoty_controls .wnoty_button {
+    cursor: pointer;
+    font-size: 14px;
+    color: inherit;
+    text-shadow: inherit;
+    background: none;
+    border: none;
+    font-weight: normal;
+    text-transform: capitalize;
+    background-color: rgba(0,0,0,.15);
+    padding: 8px 12px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+}
+.wnoty_theme_default .wnoty_controls .wnoty_confirm {
+    background-color: rgba(255,0,0,.35);
+}
+.wnoty_theme_default .wnoty_controls .wnoty_button:hover {
+    background-color: rgba(0,0,0,.3);
+}
+.wnoty_theme_default .wnoty_controls .wnoty_button:active {
+    text-shadow: 0 -1px #000;
+    background-color: rgba(0,0,0,.4);
+}
+/* status */
+/* error */
+.wnoty_theme_default .wnoty_status_error {
+    background-color: #e25856;
+}
+/* succes */
+.wnoty_theme_default .wnoty_status_success {
+    background-color: #709449;
+    text-shadow: 0 1px rgba(0,0,0,.25);
+}
+/* warning */
+.wnoty_theme_default .wnoty_status_warning {
+    background-color: #faa732;
+    text-shadow: none;
+}
+/* info */
+.wnoty_theme_default .wnoty_status_info {
+    background-color: #3B9EFD;
+    text-shadow: none;
+}

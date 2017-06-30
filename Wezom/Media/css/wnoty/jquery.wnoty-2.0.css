@@ -1,0 +1,115 @@
+/*
+    wNoty v2.5 / core css file
+    WEZOM Studio / Oleg Dutchenko
+*/
+
+/* base */
+.wnoty_overlay {
+    background-color: rgba(0,0,0,.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.wnoty_wraper {
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1100;
+    border: 10px solid transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* group */
+.wnoty_group {
+    pointer-events: initial;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    max-width: 400px;
+    max-height: 100%;
+    overflow-y: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: auto;
+}
+/* positions */
+.wnoty_position_top {
+    top: 0;
+}
+.wnoty_position_right {
+    right: 0;
+}
+.wnoty_position_bottom {
+    bottom: 0;
+}
+.wnoty_position_left {
+    left: 0;
+}
+.wnoty_position_center {
+    left: 0;
+    right: 0;
+}
+.wnoty_position_middle {
+    top: 0;
+    bottom: 0;
+}
+/* informer */
+.wnoty_informer {
+    position: relative;
+    z-index: 1;
+}
+.wnoty_informer:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+/* message */
+.wnoty_message {
+    position: relative;
+}
+/* message header */
+.wnoty_header {
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+    line-height: 1.4em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.wnoty_minify .wnoty_header {
+    cursor: pointer;
+}
+/* close button */
+button.wnoty_close {
+    text-align: center;
+}
+/* controls */
+.wnoty_controls {
+    position: relative;
+}
+.wnoty_button {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.wnoty_button:active {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+}

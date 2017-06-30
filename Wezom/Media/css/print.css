@@ -1,0 +1,11 @@
+.table2 th { text-align:left; padding:10px 5px; font-weight:700;border:1px dashed #ccc;}
+.table2 td { border:1px dashed #ccc; padding:10px 5px}
+.logo_2 {
+    border:0 !important;
+    float:right !important;
+    margin-top:-40px !important;
+}
+.table2 td,
+.table2 th {
+    padding: 0;
+}
